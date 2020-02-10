@@ -3,8 +3,7 @@ import { connect } from "react-redux";
 import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
-
-import { constants } from "../../constants";
+import { incrementAction, decreaseAction } from "../../actions";
 
 const Main = ({ value, incrementAction, decreaseAction }) => {
   return (

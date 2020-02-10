@@ -1,4 +1,4 @@
-import { constants } from "../actions";
+import constants from "../constants";
 
 const initialState = {
   value: 0
@@ -10,6 +10,8 @@ const addReducer = (state = initialState, action) => {
       return { ...state, value: state.value + 1 };
     case constants.DECREASE:
       return { ...state, value: state.value - 1 };
+    default:
+      return state;
   }
 };
 

@@ -1,4 +1,4 @@
-import { constants } from "../constants";
+import constants from "../constants";
 import { toast } from "react-toastify";
 
 export const incrementAction = () => {
